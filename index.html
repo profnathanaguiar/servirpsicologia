@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>SERvir Psicologia | Cuidado Integral da Saúde Mental</title>
-<meta name="description" content="SERvir – Acolhimento e Desenvolvimento Psicológico. Psicoterapia com base na TCC em Goiânia e online. Psicóloga Ana Paula Aguiar – CRP 18456/GO."/>
+<title>SERvir | Avaliação e Intervenção em Transtornos de Aprendizagem</title>
+<meta name="description" content="SERvir – Espaço de Acolhimento e Desenvolvimento Familiar. Avaliação e intervenção em transtornos de aprendizagem, TDAH, dislexia e dificuldades escolares. Psicóloga e Psicopedagoga Ana Paula Aguiar – CRP 18456/GO."/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -12,7 +12,6 @@
 body{font-family:'Inter',sans-serif;color:var(--rose-dark);background:var(--white);overflow-x:hidden;scroll-behavior:smooth}
 h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif}
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0.9rem 2.5rem;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(140,95,101,.08)}
 .nav-logo{display:flex;align-items:center;gap:0.75rem}
 .nav-logo img{height:52px;width:auto;display:block}
@@ -25,12 +24,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0.9rem 2.5rem;displa
 .nav-cta{background:var(--rose)!important;color:white!important;padding:.55rem 1.3rem;border-radius:2rem;opacity:1!important;transition:transform .2s,box-shadow .2s!important}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(140,95,101,.35)!important}
 
-/* HERO */
 .hero{display:grid;grid-template-columns:1fr 1fr;padding-top:4.5rem;align-items:center}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:4rem 3rem 4rem 5rem}
 .hero-logo{width:220px;height:auto;display:block;margin:0 auto 2rem auto}
 .hero-badge{display:inline-block;font-size:.63rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);background:var(--rose-pale);border:1px solid rgba(140,95,101,.15);padding:.38rem .9rem;border-radius:2rem;margin-bottom:1.8rem}
-.hero-left h1{font-size:clamp(2.5rem,4.2vw,4.2rem);color:var(--rose-dark);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-bottom:1.4rem}
+.hero-left h1{font-size:clamp(2.2rem,3.8vw,3.8rem);color:var(--rose-dark);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin-bottom:1.4rem}
 .hero-left p{font-size:1rem;color:var(--rose);opacity:.75;line-height:1.7;max-width:460px;margin-bottom:2.2rem}
 .hero-btns{display:flex;gap:.9rem;flex-wrap:wrap}
 .btn-primary{background:var(--rose);color:white;padding:.9rem 1.8rem;border-radius:.9rem;font-weight:700;font-size:.86rem;text-decoration:none;transition:transform .2s,box-shadow .2s;font-family:'Plus Jakarta Sans',sans-serif}
@@ -42,21 +40,37 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0.9rem 2.5rem;displa
 .hero-quote{position:absolute;bottom:2.5rem;left:-1rem;background:white;padding:1.1rem 1.4rem;border-radius:1rem;box-shadow:0 20px 50px rgba(94,58,62,.15);border-left:4px solid var(--rose);max-width:270px}
 .hero-quote p{font-size:.72rem;font-weight:700;color:var(--rose);line-height:1.5;letter-spacing:.04em;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif}
 
-/* COMMON */
 section{padding:5.5rem 5rem}
 .section-tag{font-size:.63rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);opacity:.6;margin-bottom:.7rem;display:block;font-family:'Plus Jakarta Sans',sans-serif}
 .section-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.9rem,3vw,2.8rem);color:var(--rose-dark);letter-spacing:-.025em;line-height:1.1;font-weight:800;margin-bottom:.9rem}
 .section-sub{font-size:.96rem;color:var(--rose);opacity:.65;line-height:1.7;max-width:520px}
 
-/* SERVIÇOS */
 #servicos{background:var(--rose-pale)}
 .services-header{text-align:center;margin-bottom:3rem}
 .services-header .section-sub{margin:0 auto}
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+
+.servico-destaque{background:white;border-radius:1.8rem;overflow:hidden;border:2px solid rgba(140,95,101,.15);box-shadow:0 4px 24px rgba(140,95,101,.1);margin-bottom:2rem}
+.destaque-header{background:var(--rose);padding:2rem 2.5rem;display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.destaque-badge{background:rgba(255,255,255,.18);color:white;font-size:.6rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.35rem .9rem;border-radius:2rem;font-family:'Plus Jakarta Sans',sans-serif;white-space:nowrap;flex-shrink:0}
+.destaque-header h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1rem,2vw,1.4rem);font-weight:800;color:white;line-height:1.25}
+.destaque-body{padding:2rem 2.5rem 2.2rem}
+.destaque-desc{font-size:.93rem;color:var(--rose);opacity:.8;line-height:1.7;margin-bottom:1.5rem;max-width:780px}
+.demandas-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-bottom:1.2rem}
+.demanda-card{border-radius:1.2rem;overflow:hidden;border:1px solid rgba(140,95,101,.1);transition:all .3s;cursor:default;background:white}
+.demanda-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(140,95,101,.15)}
+.demanda-img{height:110px;overflow:hidden}
+.demanda-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.demanda-card:hover .demanda-img img{transform:scale(1.05)}
+.demanda-label{padding:.65rem .8rem;font-size:.72rem;font-weight:700;color:var(--rose-dark);font-family:'Plus Jakarta Sans',sans-serif;text-align:center;line-height:1.3}
+.destaque-note{font-size:.74rem;color:var(--rose);opacity:.55;font-style:italic;margin-bottom:1.4rem}
+.destaque-cta{display:inline-block;background:var(--rose);color:white;padding:.8rem 2rem;border-radius:.9rem;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;transition:transform .2s,box-shadow .2s}
+.destaque-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(140,95,101,.35)}
+
+.services-grid-secondary{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 .service-card{background:white;border-radius:1.4rem;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(140,95,101,.08);transition:all .35s;box-shadow:0 2px 12px rgba(140,95,101,.06)}
 .service-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(140,95,101,.18)}
 .svc-img{height:175px;overflow:hidden;position:relative;flex-shrink:0}
-.svc-img img{width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform .5s;image-rendering:auto}
+.svc-img img{width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform .5s}
 .service-card:hover .svc-img img{transform:scale(1.05)}
 .svc-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(94,58,62,.12))}
 .svc-body{padding:1.3rem 1.3rem 1.5rem;display:flex;flex-direction:column;flex:1}
@@ -66,7 +80,6 @@ section{padding:5.5rem 5rem}
 .svc-btn{display:block;text-align:center;padding:.58rem;border:1.5px solid var(--rose);border-radius:.65rem;color:var(--rose);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .25s;font-family:'Plus Jakarta Sans',sans-serif;margin-top:auto}
 .svc-btn:hover{background:var(--rose);color:white}
 
-/* SOBRE */
 #sobre{background:white}
 .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .sobre-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -80,7 +93,6 @@ section{padding:5.5rem 5rem}
 .badge-check{width:19px;height:19px;background:var(--rose);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .sobre-badge span{font-size:.74rem;font-weight:700;color:var(--rose-dark);font-family:'Plus Jakarta Sans',sans-serif}
 
-/* ABORDAGEM */
 #abordagem{background:var(--rose-pale)}
 .abordagem-header{text-align:center;margin-bottom:3rem}
 .abordagem-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
@@ -91,37 +103,32 @@ section{padding:5.5rem 5rem}
 .abordagem-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.25rem;color:var(--rose-dark);font-weight:800;margin-bottom:.65rem}
 .abordagem-card p{font-size:.85rem;color:var(--rose);opacity:.7;line-height:1.7}
 
-/* PÚBLICO */
 #publico{background:var(--rose);color:white;padding:5.5rem 5rem}
 .publico-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .publico-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.9rem,3vw,2.9rem);color:white;font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:2.2rem}
 .publico-list{display:flex;flex-direction:column;gap:.65rem}
-.publico-item{display:flex;align-items:center;gap:.9rem;background:rgba(255,255,255,.08);padding:.9rem 1.1rem;border-radius:.9rem;border:1px solid rgba(255,255,255,.06)}
-.publico-item p{font-size:.88rem;font-weight:500;opacity:.9}
+.publico-item{display:flex;align-items:flex-start;gap:.9rem;background:rgba(255,255,255,.08);padding:.9rem 1.1rem;border-radius:.9rem;border:1px solid rgba(255,255,255,.06)}
+.publico-item p{font-size:.88rem;font-weight:500;opacity:.9;line-height:1.5}
 .publico-img-wrap{position:relative}
 .publico-img-wrap::before{content:'';position:absolute;inset:1.5rem -1.5rem -1.5rem 1.5rem;border:2px solid rgba(255,255,255,.15);border-radius:2rem}
 .publico-img-wrap img{width:100%;height:auto;display:block;border-radius:2rem;position:relative;z-index:1;image-rendering:auto}
 
-/* ESPECIALIDADES */
 #especialidades{background:white;text-align:center}
-.demands-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin-top:2.2rem;max-width:680px;margin-left:auto;margin-right:auto}
+.demands-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin-top:2.2rem;max-width:760px;margin-left:auto;margin-right:auto}
 .demand-tag{padding:.6rem 1.3rem;background:var(--rose-pale);border:1px solid rgba(140,95,101,.12);border-radius:2rem;font-size:.78rem;font-weight:700;color:var(--rose);cursor:default;transition:all .2s;font-family:'Plus Jakarta Sans',sans-serif}
 .demand-tag:hover{background:var(--rose);color:white;transform:scale(1.05)}
 
-/* CTA */
 #contato{background:white;text-align:center}
 .cta-box{background:var(--rose-pale);border-radius:2.2rem;padding:4.5rem 3.5rem;max-width:780px;margin:0 auto;border:1px solid rgba(140,95,101,.1);position:relative;overflow:hidden}
 .cta-box::before{content:'';position:absolute;width:280px;height:280px;background:rgba(140,95,101,.06);border-radius:50%;top:-90px;right:-90px}
-.cta-box h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:800;color:var(--rose-dark);margin-bottom:1rem;position:relative;letter-spacing:-.02em}
+.cta-box h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:800;color:var(--rose-dark);margin-bottom:1rem;position:relative;letter-spacing:-.02em}
 .cta-box p{font-size:.97rem;color:var(--rose);opacity:.7;line-height:1.7;margin-bottom:2.2rem;max-width:520px;margin-left:auto;margin-right:auto;position:relative}
 
-/* FOOTER */
 footer{background:var(--rose-dark);color:white;padding:3.8rem 5rem 2rem}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:3rem;margin-bottom:2.8rem}
-.footer-logo{display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem}
-.footer-logo img{height:48px;width:auto;mix-blend-mode:multiply;filter:brightness(0) invert(1);opacity:.85}
-.footer-logo-text strong{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:800;color:white;display:block;line-height:1.1}
-.footer-logo-text span{font-size:.6rem;color:white;opacity:.55;letter-spacing:.15em;text-transform:uppercase}
+.footer-logo{margin-bottom:1rem}
+.footer-logo-text strong{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:800;color:white;display:block;line-height:1.1;margin-bottom:.2rem}
+.footer-logo-text span{font-size:.6rem;color:white;opacity:.55;letter-spacing:.12em;text-transform:uppercase}
 footer p,footer a{font-size:.83rem;opacity:.65;color:white;text-decoration:none;line-height:1.7}
 footer a:hover{opacity:1}
 .footer-crp{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);padding:.32rem .75rem;border-radius:.45rem;margin-top:.9rem;font-family:'Plus Jakarta Sans',sans-serif}
@@ -129,70 +136,69 @@ footer a:hover{opacity:1}
 .footer-contact{display:flex;align-items:center;gap:.7rem;margin-bottom:.7rem}
 .footer-contact svg{width:14px;height:14px;opacity:.6;flex-shrink:0}
 .footer-addr{background:rgba(255,255,255,.06);padding:1.1rem;border-radius:.9rem;font-size:.8rem;opacity:.65;line-height:1.6}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.4rem;display:flex;justify-content:space-between;font-size:.62rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;opacity:.28;font-family:'Plus Jakarta Sans',sans-serif}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.4rem;display:flex;justify-content:space-between;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.28;font-family:'Plus Jakarta Sans',sans-serif}
 
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}
   .hero-left{padding:6.5rem 2rem 3rem}
   .hero-quote{display:none}
   section,#publico{padding:4rem 2rem}
-  .services-grid{grid-template-columns:1fr 1fr}
+  .demandas-grid{grid-template-columns:repeat(3,1fr)}
+  .services-grid-secondary{grid-template-columns:1fr}
   .sobre-grid,.publico-grid{grid-template-columns:1fr}
   .abordagem-cards{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   nav{padding:0.75rem 1rem}
-
-  /* Nav mobile: esconde texto ao lado do logo, mostra só ícone + links compactos */
   .nav-logo-text{display:none}
   .nav-logo img{height:40px}
   .nav-links{gap:1rem}
   .nav-links a{font-size:.62rem;letter-spacing:.06em}
   .nav-cta{padding:.45rem .9rem;font-size:.62rem}
-
-  /* CTA button: largura total, sem overflow */
   .cta-box{padding:3rem 1.5rem}
-  .btn-primary{width:100%;text-align:center;font-size:.78rem;letter-spacing:.08em;padding:.9rem 1rem;word-break:keep-all}
+  .btn-primary{width:100%;text-align:center;font-size:.78rem;letter-spacing:.08em;padding:.9rem 1rem}
   .hero-btns{flex-direction:column}
   .btn-secondary{width:100%;text-align:center}
+  .destaque-body{padding:1.5rem}
+}
+@media(max-width:600px){
+  .demandas-grid{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV com logo -->
 <nav>
   <div class="nav-logo">
-    <!-- Logo SERvir Psicologia -->
-    <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_200,f_auto,q_auto/v1773782490/SERvir_Psicologia_1_bg17ko.png" alt="SERvir Psicologia" onerror="this.style.display='none'"/>
+    <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_200,f_auto,q_auto/v1773782490/SERvir_Psicologia_1_bg17ko.png" alt="SERvir" onerror="this.style.display='none'"/>
     <div class="nav-logo-text">
       <strong>SERvir</strong>
-      <span>Acolhimento e Desenvolvimento Psicológico</span>
+      <span>Espaço de Acolhimento e Desenvolvimento Familiar</span>
     </div>
   </div>
   <div class="nav-links">
     <a href="#inicio">Início</a>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
-    <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="nav-cta">Agendar</a>
+    <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+consulta." target="_blank" class="nav-cta">Agendar</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section id="inicio" class="hero">
   <div class="hero-left">
-    <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_280,f_auto,q_auto/v1773782490/SERvir_Psicologia_1_bg17ko.png" alt="SERvir Psicologia" class="hero-logo"/>
-    <span class="hero-badge">Psicoterapia baseada em evidências</span>
-    <h1>Cuidado Integral da Sua Saúde Mental</h1>
-    <p>Você não precisa enfrentar isso sozinho. No SERvir, oferecemos acompanhamento psicológico sério, acolhedor e com base científica para quem está pronto para mudar.</p>
+    <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_280,f_auto,q_auto/v1775414461/SERvir_Psicologia_jvyxtz.png" alt="SERvir" class="hero-logo"/>
+    <span class="hero-badge">Avaliação e intervenção baseadas em evidências</span>
+    <h1>Quando Aprender É Um Desafio, a Família Não Precisa Estar Sozinha.</h1>
+    <p>Dificuldades de aprendizagem, TDAH, dislexia — essas questões têm resposta. No SERvir, oferecemos avaliação especializada e intervenção fundamentada em ciência para apoiar crianças, adolescentes e suas famílias.</p>
     <div class="hero-btns">
-      <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="btn-primary">AGENDE SUA CONSULTA</a>
+      <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o." target="_blank" class="btn-primary">AGENDE UMA AVALIAÇÃO</a>
       <a href="#servicos" class="btn-secondary">CONHEÇA OS SERVIÇOS</a>
     </div>
   </div>
   <div class="hero-right">
-    <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_1200,f_auto,q_auto/v1773778005/IMG_3419_ngj1vv.png" alt="Psicóloga Ana Paula Aguiar – SERvir Psicologia"/>
+    <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_1200,f_auto,q_auto/v1773778005/IMG_3419_ngj1vv.png" alt="Psicóloga e Psicopedagoga Ana Paula Aguiar – SERvir"/>
     <div class="hero-quote">
-      <p>"O foco está na transformação sustentável e no seu ritmo."</p>
+      <p>"Cada criança aprende de um jeito. Nossa função é encontrar o caminho certo."</p>
     </div>
   </div>
 </section>
@@ -202,43 +208,54 @@ footer a:hover{opacity:1}
   <div class="services-header">
     <span class="section-tag">O que oferecemos</span>
     <h2 class="section-title">Serviços</h2>
-    <p class="section-sub">Atendimento especializado, com rigor ético e base científica.</p>
+    <p class="section-sub">Atendimento especializado para crianças, adolescentes e adultos — com rigor ético e base científica.</p>
   </div>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="svc-img">
-        <img src="https://www.psicologoeterapia.com.br/wp-content/uploads/terapia-online-brasil.jpg" alt="Psicoterapia Individual" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'"/>
-        <div class="svc-overlay"></div>
-      </div>
-      <div class="svc-body">
-        <div class="svc-num">01</div>
-        <h3 class="svc-title">Psicoterapia individual</h3>
-        <p class="svc-desc">Um espaço de escuta qualificada para compreender padrões de pensamento, comportamento e resposta emocional — e construir mudanças consistentes no seu dia a dia.</p>
-        <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="svc-btn">Agendar</a>
-      </div>
+
+  <div class="servico-destaque">
+    <div class="destaque-header">
+      <span class="destaque-badge">Serviço principal</span>
+      <h3>Avaliação e Intervenção em Transtornos e Dificuldades de Aprendizagem</h3>
     </div>
-    <div class="service-card">
-      <div class="svc-img">
-        <img src="https://www.psicologosberrini.com.br/wp-content/uploads/terapia-de-casal-primeira-consulta-1.jpg" alt="Psicoterapia de Casal" onerror="this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80'"/>
-        <div class="svc-overlay"></div>
+    <div class="destaque-body">
+      <p class="destaque-desc">Processo estruturado de investigação das funções cognitivas, comportamentais e emocionais envolvidas na aprendizagem — com foco em diagnóstico preciso e orientação terapêutica para a criança e a família. Atendemos crianças em idade escolar, adolescentes e adultos com histórico de dificuldades não investigadas.</p>
+      <div class="demandas-grid">
+        <div class="demanda-card">
+          <div class="demanda-img"><img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_400,f_auto,q_auto/v1775417086/dislexia_p1opns.jpg" alt="Dislexia"/></div>
+          <div class="demanda-label">Dislexia</div>
+        </div>
+        <div class="demanda-card">
+          <div class="demanda-img"><img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_400,f_auto,q_auto/v1775417079/tdah_wxqvzv.jpg" alt="TDAH"/></div>
+          <div class="demanda-label">TDAH</div>
+        </div>
+        <div class="demanda-card">
+          <div class="demanda-img"><img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_400,f_auto,q_auto/v1775417081/social_pn8wbl.jpg" alt="Relações Sociais"/></div>
+          <div class="demanda-label">Desafios nas relações sociais</div>
+        </div>
+        <div class="demanda-card">
+          <div class="demanda-img"><img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_400,f_auto,q_auto/v1775417081/ansiedade_ojbiss.jpg" alt="Ansiedade"/></div>
+          <div class="demanda-label">Ansiedade</div>
+        </div>
+        <div class="demanda-card">
+          <div class="demanda-img"><img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_400,f_auto,q_auto/v1775417082/desreg._a8jwiz.jpg" alt="Desregulação emocional"/></div>
+          <div class="demanda-label">Desregulação emocional</div>
+        </div>
       </div>
-      <div class="svc-body">
-        <div class="svc-num">02</div>
-        <h3 class="svc-title">Psicoterapia de casal</h3>
-        <p class="svc-desc">Intervenção focada na melhora da comunicação, na resolução de conflitos e no fortalecimento do vínculo entre os parceiros.</p>
-        <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="svc-btn">Agendar</a>
-      </div>
+      <p class="destaque-note">* Estas são as demandas mais frequentes. O atendimento abrange outras condições relacionadas a dificuldades de aprendizagem e desenvolvimento.</p>
+      <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o." target="_blank" class="destaque-cta">AGENDAR AVALIAÇÃO</a>
     </div>
+  </div>
+
+  <div class="services-grid-secondary">
     <div class="service-card">
       <div class="svc-img">
         <img src="https://images.unsplash.com/photo-1476703993599-0035a21b17a9?auto=format&fit=crop&w=600&q=80" alt="Orientação Parental"/>
         <div class="svc-overlay"></div>
       </div>
       <div class="svc-body">
-        <div class="svc-num">03</div>
+        <div class="svc-num">02</div>
         <h3 class="svc-title">Orientação parental</h3>
-        <p class="svc-desc">Suporte estruturado para pais lidarem com desafios no desenvolvimento e no comportamento dos filhos, com estratégias baseadas em evidências.</p>
-        <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="svc-btn">Agendar</a>
+        <p class="svc-desc">Suporte estruturado para pais que lidam com os desafios do desenvolvimento atípico — incluindo manejo comportamental, comunicação com a escola e estratégias baseadas em evidências para o cotidiano familiar.</p>
+        <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+orienta%C3%A7%C3%A3o+parental." target="_blank" class="svc-btn">Agendar</a>
       </div>
     </div>
     <div class="service-card">
@@ -247,10 +264,10 @@ footer a:hover{opacity:1}
         <div class="svc-overlay"></div>
       </div>
       <div class="svc-body">
-        <div class="svc-num">04</div>
+        <div class="svc-num">03</div>
         <h3 class="svc-title">Avaliação psicológica</h3>
-        <p class="svc-desc">Processo estruturado de investigação de aspectos cognitivos, comportamentais e emocionais, com finalidade diagnóstica ou orientativa.</p>
-        <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="svc-btn">Agendar</a>
+        <p class="svc-desc">Investigação estruturada de aspectos cognitivos, comportamentais e emocionais com finalidade diagnóstica ou orientativa — para crianças, adolescentes e adultos que buscam compreender melhor seu perfil de funcionamento.</p>
+        <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+avalia%C3%A7%C3%A3o+psicol%C3%B3gica." target="_blank" class="svc-btn">Agendar</a>
       </div>
     </div>
   </div>
@@ -264,7 +281,7 @@ footer a:hover{opacity:1}
         <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_800,f_auto,q_auto/v1774463659/IMG_3448_bpqpa4.heic" alt="Ana Paula Aguiar" loading="eager" decoding="async"/>
       </div>
       <div class="sobre-img-wrap">
-        <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_800,f_auto,q_auto/v1773778012/IMG_3505_a9jtpy.png" alt="Ana Paula Aguiar" loading="eager" decoding="async"/>
+        <img src="https://res.cloudinary.com/dat92aqiv/image/upload/w_800,f_auto,q_auto/v1775414944/Generated_Image_April_05_2026_-_3_46PM_wj8tos.png" alt="SERvir – Espaço" loading="eager" decoding="async"/>
       </div>
     </div>
     <div class="sobre-text">
@@ -272,10 +289,10 @@ footer a:hover{opacity:1}
       <h2 class="section-title">SERvir</h2>
       <p style="font-size:1rem;font-weight:700;color:var(--rose-dark);opacity:1;margin-bottom:1rem;font-family:'Plus Jakarta Sans',sans-serif">
         Fundado e dirigido por Ana Paula Aguiar<br/>
-        <span style="font-weight:500;font-size:.92rem">Psicóloga – CRP 18456/GO · Especialista em TCC</span>
+        <span style="font-weight:500;font-size:.92rem">Psicóloga – CRP 18456/GO · Psicopedagoga · Especialista em TCC</span>
       </p>
-      <p>O SERvir nasce do propósito de unir ciência e cuidado humano. Fundado pela psicóloga Ana Paula Aguiar, o espaço oferece atendimento clínico baseado na Terapia Cognitivo-Comportamental (TCC), uma das abordagens mais bem documentadas para o tratamento de demandas emocionais e comportamentais.</p>
-      <p>O nome SERvir carrega uma dupla essência: o convite ao <strong>SER</strong> — ao autoconhecimento e à presença — e o compromisso de <strong>servir</strong> ao outro com ética, dedicação e responsabilidade científica.</p>
+      <p>O SERvir é um espaço dedicado ao desenvolvimento e ao cuidado de crianças, adolescentes e suas famílias. Sob a condução da psicóloga e psicopedagoga Ana Paula Aguiar, o atendimento integra avaliação psicológica, intervenção em dificuldades de aprendizagem e orientação familiar com base na Terapia Cognitivo-Comportamental (TCC).</p>
+      <p>O nome SERvir carrega uma dupla essência: o convite ao <strong>SER</strong> — ao desenvolvimento pleno de cada indivíduo — e o compromisso de <strong>servir</strong> com ética, dedicação e responsabilidade científica.</p>
       <div class="sobre-badges">
         <div class="sobre-badge">
           <div class="badge-check"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
@@ -287,7 +304,7 @@ footer a:hover{opacity:1}
         </div>
         <div class="sobre-badge">
           <div class="badge-check"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
-          <span>Base em TCC</span>
+          <span>Psicologia e Psicopedagogia</span>
         </div>
         <div class="sobre-badge">
           <div class="badge-check"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
@@ -302,24 +319,30 @@ footer a:hover{opacity:1}
 <section id="abordagem">
   <div class="abordagem-header">
     <span class="section-tag">Metodologia</span>
-    <h2 class="section-title">Nossa abordagem terapêutica</h2>
-    <p class="section-sub" style="margin:0 auto">A TCC trabalha a relação entre pensamentos, comportamentos e respostas emocionais — gerando mudança concreta e duradoura.</p>
+    <h2 class="section-title">Nossa abordagem</h2>
+    <p class="section-sub" style="margin:0 auto">Integramos avaliação clínica rigorosa, intervenção psicopedagógica e suporte familiar em um modelo centrado no desenvolvimento real de cada pessoa.</p>
   </div>
   <div class="abordagem-cards">
     <div class="abordagem-card">
-      <div class="abordagem-icon"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg></div>
-      <h3>Pensamentos</h3>
-      <p>Identificação e reestruturação de padrões cognitivos que mantêm o sofrimento — com técnicas validadas cientificamente.</p>
+      <div class="abordagem-icon">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25Z"/></svg>
+      </div>
+      <h3>Avaliação precisa</h3>
+      <p>Uso de instrumentos padronizados e validados para mapear o perfil cognitivo, comportamental e de aprendizagem — com relatórios aplicáveis pela escola e por outros profissionais.</p>
     </div>
     <div class="abordagem-card">
-      <div class="abordagem-icon"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg></div>
-      <h3>Emoções</h3>
-      <p>Desenvolvimento de habilidades de regulação emocional, autocompaixão e qualidade nas relações interpessoais.</p>
+      <div class="abordagem-icon">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+      </div>
+      <h3>Família como parceira</h3>
+      <p>O processo inclui ativamente os pais e responsáveis — com devolutivas claras, orientação prática e suporte para decisões no contexto escolar e doméstico.</p>
     </div>
     <div class="abordagem-card">
-      <div class="abordagem-icon"><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></div>
-      <h3>Comportamento</h3>
-      <p>Construção de repertório comportamental mais funcional, com escolhas mais alinhadas aos seus valores e objetivos.</p>
+      <div class="abordagem-icon">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
+      </div>
+      <h3>Intervenção funcional</h3>
+      <p>Além do diagnóstico, desenvolvemos planos de intervenção individualizados com foco em autonomia, regulação e habilidades aplicáveis ao cotidiano escolar e às relações sociais.</p>
     </div>
   </div>
 </section>
@@ -328,14 +351,14 @@ footer a:hover{opacity:1}
 <section id="publico">
   <div class="publico-grid">
     <div>
-      <h2 class="publico-title">A terapia pode ser para você que:</h2>
+      <h2 class="publico-title">O SERvir é para famílias que:</h2>
       <div class="publico-list">
-        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Convive com ansiedade, preocupação excessiva ou ataques de pânico</p></div>
-        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Percebe padrões que se repetem e quer entender por quê</p></div>
-        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Lida com procrastinação, perfeccionismo ou dificuldade de concentração</p></div>
-        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Quer fortalecer a autoestima e construir relações mais saudáveis</p></div>
-        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Está passando por um momento difícil e precisa de apoio especializado</p></div>
-        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Valoriza um trabalho sério, ético e fundamentado em ciência</p></div>
+        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0;margin-top:2px"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Percebem que o filho tem dificuldade para ler, escrever ou se concentrar — e não sabem o que está por trás disso</p></div>
+        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0;margin-top:2px"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Receberam um diagnóstico e precisam entender o que fazer a partir daí</p></div>
+        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0;margin-top:2px"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Enfrentam conflitos frequentes em casa relacionados ao comportamento ou à rotina escolar</p></div>
+        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0;margin-top:2px"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Buscam uma avaliação completa para embasar decisões escolares ou terapêuticas</p></div>
+        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0;margin-top:2px"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Querem um profissional que se comunique com clareza e os inclua no processo</p></div>
+        <div class="publico-item"><div class="badge-check" style="background:rgba(255,255,255,.2);flex-shrink:0;margin-top:2px"><svg width="10" height="10" fill="none" viewBox="0 0 24 24"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m4.5 12.75 6 6 9-13.5"/></svg></div><p>Valorizam um trabalho sério, ético e fundamentado em ciência</p></div>
       </div>
     </div>
     <div class="publico-img-wrap">
@@ -346,23 +369,30 @@ footer a:hover{opacity:1}
 
 <!-- ESPECIALIDADES -->
 <section id="especialidades">
-  <span class="section-tag" style="display:block;text-align:center">Especialidades</span>
+  <span class="section-tag" style="display:block;text-align:center">Condições atendidas</span>
   <h2 class="section-title" style="text-align:center">Demandas atendidas</h2>
   <div class="demands-wrap">
-    <span class="demand-tag">Ansiedade</span><span class="demand-tag">Depressão</span>
-    <span class="demand-tag">Estresse</span><span class="demand-tag">Orientação Vocacional</span>
-    <span class="demand-tag">TDAH e Produtividade</span><span class="demand-tag">Procrastinação</span>
-    <span class="demand-tag">Autoestima</span><span class="demand-tag">Luto</span>
-    <span class="demand-tag">Relacionamentos</span><span class="demand-tag">Burnout</span>
+    <span class="demand-tag">Dislexia</span>
+    <span class="demand-tag">Discalculia</span>
+    <span class="demand-tag">Disgrafia</span>
+    <span class="demand-tag">TDAH</span>
+    <span class="demand-tag">TEA – Espectro Autista</span>
+    <span class="demand-tag">Ansiedade escolar</span>
+    <span class="demand-tag">Desregulação emocional</span>
+    <span class="demand-tag">Dificuldades de socialização</span>
+    <span class="demand-tag">Orientação vocacional</span>
+    <span class="demand-tag">Altas habilidades / Superdotação</span>
+    <span class="demand-tag">Dupla excepcionalidade</span>
+    <span class="demand-tag">Dificuldades de leitura e escrita</span>
   </div>
 </section>
 
 <!-- CTA -->
 <section id="contato">
   <div class="cta-box">
-    <h2>O primeiro passo é o mais importante.</h2>
-    <p>Se você chegou até aqui, algo em você já está pronto para mudar. No SERvir, você encontra um espaço seguro, ético e baseado em ciência para trabalhar o que precisa — no seu ritmo.</p>
-    <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Quero+marcar+uma+sess%C3%A3o+de+psicoterapia." target="_blank" class="btn-primary">AGENDAR MINHA CONSULTA</a>
+    <h2>O primeiro passo é entender o que está acontecendo.</h2>
+    <p>Uma avaliação bem feita muda o rumo. Se você tem dúvidas sobre o desenvolvimento do seu filho — ou de você mesmo — estamos aqui para oferecer respostas claras e um caminho concreto.</p>
+    <a href="https://api.whatsapp.com/send/?phone=5562983044336&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o." target="_blank" class="btn-primary">AGENDAR MINHA AVALIAÇÃO</a>
   </div>
 </section>
 
@@ -373,10 +403,10 @@ footer a:hover{opacity:1}
       <div class="footer-logo">
         <div class="footer-logo-text">
           <strong>SERvir</strong>
-          <span>Acolhimento e Desenvolvimento Psicológico</span>
+          <span>Espaço de Acolhimento e Desenvolvimento Familiar</span>
         </div>
       </div>
-      <p>Psicoterapia com ética, ciência e cuidado humano.<br/>Fundado e dirigido pela Psicóloga Ana Paula Aguiar.</p>
+      <p>Avaliação e intervenção em transtornos de aprendizagem com ética, ciência e cuidado.<br/>Fundado e dirigido pela Psicóloga e Psicopedagoga Ana Paula Aguiar.</p>
       <div class="footer-crp">CRP 18456/GO</div>
     </div>
     <div>
@@ -384,7 +414,7 @@ footer a:hover{opacity:1}
         <h5>Contato</h5>
         <div class="footer-contact">
           <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
-          <a href="/cdn-cgi/l/email-protection#f9898a9089988c9598d7989e8c90988bb99e94989095d79a9694">psipaula.aguiar&#64;gmail.com</a>
+          <a href="mailto:psipaula.aguiar@gmail.com">psipaula.aguiar&#64;gmail.com</a>
         </div>
       </div>
     </div>
@@ -396,9 +426,19 @@ footer a:hover{opacity:1}
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 SERvir – Acolhimento e Desenvolvimento Psicológico. Todos os direitos reservados.</span>
+    <span>© 2026 SERvir – Espaço de Acolhimento e Desenvolvimento Familiar. Todos os direitos reservados.</span>
     <span>Desenvolvido com ética e transparência</span>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
